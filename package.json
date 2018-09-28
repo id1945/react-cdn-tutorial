@@ -1,0 +1,23 @@
+{
+  "name": "react-cdn-tutorial",
+  "version": "0.0.1",
+  "description": "react-cdn-tutorial",
+  "homepage": "http://id1945.github.io/react-cdn-tutorial",
+  "dependencies": {
+    "express": "*"
+  },
+  "engine": "node >=0.6.x",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "react-cdn-tutorial",
+  "license": "react-cdn-tutorial",
+  "bugs": {
+    "url": ""
+  }
+}

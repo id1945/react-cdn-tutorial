@@ -1,0 +1,233 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%; 
+    max-height: 100%; 
+    font-family:Sans-serif;
+    line-height: 1.5em;
+}
+
+#nav{
+    position: absolute;
+    top: 0;
+    bottom: 0; 
+    left: 0;
+    width: 300px; /* Width of navigation frame */
+    height: 100%;
+    overflow: hidden; /* Disables scrollbars on the navigation frame. To enable scrollbars, change "hidden" to "scroll" */
+    background: #eee;
+}
+
+#main{
+    position: fixed;
+    top: 0; 
+    left: 300px; /* Set this to the width of the navigation frame */
+    right: 0;
+    bottom: 0;
+    overflow: auto; 
+    background: #fff;
+}
+
+p {
+    color: #555;
+}
+
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav ul a {
+    color: #373737;
+    text-decoration: none;
+}
+
+.scollbar {
+    overflow: auto;
+}
+        
+/*IE6 fix*/
+* html body{
+    padding: 0 0 0 300px; /* Set the last value to the width of the navigation frame */
+}
+
+* html main{ 
+    height: 100%; 
+    width: 100%; 
+}
+/*Font color*/
+.text-alert-danger {
+    color:#721c24;
+}
+/* Reset */
+.modal-backdrop {
+    position: inherit !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0 !important;
+    background-color: #ff450000 !important;
+}
+.h35{
+    height: 35px;
+}
+.h30{
+    height: 30px;
+}
+.h25{
+    height: 25px;
+}
+.middle{
+    vertical-align: middle !important;
+}
+.shadow {
+    -moz-box-shadow: 2px -1px 17px #000000;
+    -webkit-box-shadow: 2px -1px 17px #000000;
+    box-shadow: 2px -1px 17px #000000;
+}
+.mw50 {
+    min-width: 50% !important; 
+}
+.w100 {
+    width: 100px !important; 
+}
+.w200 {
+    width: 200px !important; 
+}
+.w300 {
+    width: 300px !important; 
+}
+.w400 {
+    width: 400px !important; 
+}
+.w500 {
+    width: 500px !important; 
+}
+.w600 {
+    width: 600px !important; 
+}
+.w700 {
+    width: 700px !important; 
+}
+.w800 {
+    width: 800px !important; 
+}
+.w900 {
+    width: 900px !important; 
+}
+/*Width Percen*/
+.wp100 {
+    width: 100% !important; 
+}
+.wp95 {
+    width: 95% !important; 
+}
+.wp90 {
+    width: 90% !important; 
+}
+.wp80 {
+    width: 80% !important; 
+}
+/*Height*/
+.vh5 {
+    height: 5vh;
+}
+.vh10 {
+    height: 10vh;
+}
+.vh20 {
+    height: 20vh;
+}
+.vh30 {
+    height: 30vh;
+}
+.vh40 {
+    height: 40vh;
+}
+.vh50 {
+    height: 50vh;
+}
+.vh60 {
+    height: 60vh;
+}
+.vh80 {
+    height: 80vh;
+}
+.vh85 {
+    height: 85vh;
+}
+.vh90 {
+    height: 90vh;
+}
+.vh95 {
+    height: 95vh;
+}
+.vhCal {
+    height:calc(100%-100px);
+    height:-moz-calc(100%-100px);
+    height:-webkit-calc(100%-100px);
+}
+
+/*Test react animation react-addons-css-transition-group*/
+.example-enter {
+    opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+    opacity: 1;
+}
+
+.example-leave.example-leave-active {
+    opacity: 0.01;
+    transition: opacity 500ms ease-in;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+#nav-bar {
+    /*scollbar*/
+    overflow: auto; 
+    /*height*/
+    height: 64vh
+}
+.block-code {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f36d33;
+    color: #666;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+}
+
+/* xoay logo */
+.app-logo {
+    -webkit-animation: app-logo-spin infinite 20s linear;
+            animation: app-logo-spin infinite 20s linear;
+    height: 80px;
+}
+@-webkit-keyframes app-logo-spin {
+    from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@keyframes app-logo-spin {
+    from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
