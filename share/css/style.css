@@ -194,11 +194,11 @@ p {
     cursor: pointer;
 }
 
-#nav-bar {
+body #nav-bar {
     /*scollbar*/
     overflow: auto; 
     /*height*/
-    height: 64vh
+    height: 60vh
 }
 .block-code {
     background: #f4f4f4;
@@ -230,4 +230,10 @@ p {
 @keyframes app-logo-spin {
     from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
     to { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+.fixFacebookAdd {
+    position: fixed;
+    bottom: 0;
+    min-width: 300px;
 }

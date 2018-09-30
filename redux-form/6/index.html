@@ -19,11 +19,21 @@
     <script src="http://localhost:8080/share/template.js"></script>
     <link rel="stylesheet" href="http://localhost:8080/share/css/style.css">
     <!-- import reactjs example -->
-    <script src="https://fb.me/react-0.14.7.js"></script>
-    <script src="https://fb.me/react-dom-0.14.7.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.2/browser.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-router/2.6.0/ReactRouter.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux-form/6.0.2/redux-form.min.js"></script>
+    <script src="https://fb.me/react-with-addons-15.0.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/3.0.4/redux.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-redux/4.4.5/react-redux.min.js"></script>
+    <script src="https://fb.me/react-dom-0.14.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux-form/7.4.2/redux-form.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+    <style>
+        .loading {
+            background-color: #ffffff;
+            background-image: url("http://loadinggif.com/images/image-selection/3.gif");
+            background-size: 25px 25px;
+            background-position: right center;
+            background-repeat: no-repeat;
+        }
+    </style>
 </head>
 
 <body>
@@ -33,7 +43,7 @@
                 <span class="alert-success">Github.com/id1945</span>
             </a>
         </h3>
-        <div class="pl-3 pr-3 pt-0">
+        <div class="pl-3 pr-3 pt-0 pb-3">
             <div class="text-center" style="margin-top:6%">
                 <img itemprop="image" src="http://localhost:8080/share/images/logo.svg" alt="Reactjs CDN" class="app-logo">
                 <h4 class="sidebarHead">
@@ -42,8 +52,8 @@
             </div>
             <div id="nav-bar"></div>
         </div>
-        <div class="fixed alert alert-warning text-center pt-2 pb-2">
-            <a target="_blank" href="https://fb.com/id1892"><span class="alert-warning">Facebook: Me</span></a>
+        <div class="alert alert-warning mb-0 fixFacebookAdd text-center">
+            <a target="_blank" href="https://facebook.com/id1892"><span class="alert-warning">https://facebook.com/id1892</span></a>
         </div>
     </nav>
     <main id="main">
@@ -54,12 +64,16 @@
                 </a>
             </h1>
             <div class="m-3">
-                <h3>onClick Example</h3>
+                <h3>Redux From - Async Validation - Bất Đồng Bộ</h3>
+                <div class="alert alert-danger col-lg-5">
+                    <span>Username: john, paul, george, ringo</span><br/>
+                    <span>Password: redux-form</span>
+                </div>
                 <div id="root"></div>
             </div>
         </div>
     </main>
-    <script type="text/babel" src="http://localhost:8080/react-form/01/App.js"></script>
+    <script type="text/babel" src="http://localhost:8080/redux-form/6/App.js"></script>
 </body>
 
 </html>
