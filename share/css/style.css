@@ -194,11 +194,11 @@ p {
     cursor: pointer;
 }
 
-body #nav-bar {
+#nav-bar {
     /*scollbar*/
     overflow: auto; 
     /*height*/
-    height: 60vh
+    height: calc(100vh - 280px);
 }
 .block-code {
     background: #f4f4f4;
